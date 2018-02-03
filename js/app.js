@@ -109,20 +109,15 @@ function Game() {
             else {
                 gameOverDiv.innerText = "This time Elon managed to catch " + gameOverScore.innerText + " Teslas";
             }
-
             // gameOverDiv.innerHTML = gameOverScore.innerHTML; // normal text verion
-
         }
     }
-
-
 }
 
 var Game = new Game();
 Game.showFurry();
 Game.showCoin();
 Game.startGame();
-Game.checkCoinColision();
 
 
 
