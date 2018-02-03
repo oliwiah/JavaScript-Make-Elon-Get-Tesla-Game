@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -51,14 +50,12 @@ section#score div {
   margin: 1em auto;
 }
 
-
-
-
 .furry {
   background-image: url('../images/Elon-Musk.jpg');   /* furry.png was before */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .coin {
   background-image: url('../images/tesla.png');   /* coin.png was before */
   background-repeat: no-repeat;
