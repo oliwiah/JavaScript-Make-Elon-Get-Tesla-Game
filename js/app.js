@@ -21,9 +21,7 @@ function Game() {
     this.index = function(x,y) {
         return x + (y * 10);
     };
-    // musiałam wstawić tworzenie 2x, bo nie miało czego usuwać przy 1 kroku, i wywalało null
     this.showFurry = function() {
-        // this.board[ this.index(this.furry.x,this.furry.y) ].classList.add('furry');
         this.hideVisibleFurry();
         this.board[ this.index(this.furry.x,this.furry.y) ].classList.add('furry');
     };
@@ -58,12 +56,7 @@ function Game() {
         // console.log(furryDiv);  // roboczo
         furryDiv.classList.remove("furry");
     };
-    // var turnFurry = funtion(event) {   // czy to potrzebne?
-    //     left: false;
-    //     up: false;
-    //     right: false;
-    //     down: false;
-    // };
+
     window.addEventListener('keydown', function(event) {
         switch (event.keyCode) {
             case 37: // Left
@@ -82,7 +75,7 @@ function Game() {
                 self.furry.direction = "down";
                 break;
         }
-    }, false);  // może dzięki temu false nie potrzebuję var event?
+    }, false);
     this.checkCoinColision = function() {
         if ((this.furry.x === this.coin.x) && (this.furry.y === this.coin.y)) {
             this.board[this.index(this.coin.x, this.coin.y)].classList.remove('coin');
@@ -101,7 +94,7 @@ function Game() {
             gameOverCover.classList.remove("invisible");
             var gameOverDiv = document.createElement("div");
             gameOverCover.appendChild(gameOverDiv);
-            // var gameOverScore = document.querySelector("#score div");    // for normal text verion
+            // var gameOverScore = document.querySelector("#score div");    // for normal text version
             var gameOverScore = document.querySelector("#score strong");
             if (gameOverScore.innerText == 1){
                 gameOverDiv.innerText = "This time Elon managed to catch only " + gameOverScore.innerText + " Tesla";
@@ -109,7 +102,7 @@ function Game() {
             else {
                 gameOverDiv.innerText = "This time Elon managed to catch " + gameOverScore.innerText + " Teslas";
             }
-            // gameOverDiv.innerHTML = gameOverScore.innerHTML; // normal text verion
+            // gameOverDiv.innerHTML = gameOverScore.innerHTML; // normal text version
         }
     }
 }
