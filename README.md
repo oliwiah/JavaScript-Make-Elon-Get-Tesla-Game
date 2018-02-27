@@ -8,6 +8,7 @@ A basic keyboard input game where you use keyboard arrows to move Elon Musk's ic
 * CSS
 * HTML
 * Webpack
+* JSON
 
 ## How to play
 
