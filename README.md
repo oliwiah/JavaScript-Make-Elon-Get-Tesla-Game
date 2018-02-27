@@ -15,4 +15,4 @@ A basic keyboard input game where you use keyboard arrows to move Elon Musk's ic
 2. Each catch gets you 1 point.
 3. Touching the board border ends the game :end:
 
-[PLAY THE GAME](https://oliwiah.github.io/JS_Make_Elon_Get_Tesla_Game/)
+[PLAY THE GAME](https://oliwiah.github.io/Make_Elon_Get_Tesla_Game/)
