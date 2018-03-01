@@ -12,6 +12,12 @@ Tesla icon appears randomly on a board.
 * Webpack
 * JSON
 
+## Demo
+
+![Demo CatchTesla alpha](https://j.gifs.com/KZGvOl.gif)
+
+In case you cannot view demos, [check here](gif.gif)
+
 ## How to play
 
 1. Move Elon Musk icon using :arrow_left: :arrow_up: :arrow_right: :arrow_down: in order to catch Tesla icon.
